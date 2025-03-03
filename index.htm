@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header>
+    <img src="img/1fe06935d1a4c28c23ab8553e30a3971_high.webp" alt="Logo da Loja" class="logo">
+    <nav>
+        <a class="nav-link" href="#Camisetas">Camisetas</a>
+        <a class="nav-link" href="#Blusas">Blusas</a>
+        <button id="toggleCart">🛒 Ver Carrinho</button>
+    </nav>
+</header>
+
+<div id="overlay"></div>
+
+<div id="modalcart" class="hidden">
+    <h2>🛒 Carrinho</h2>
+    <div id="carrinho"></div>
+    <p id="totalcart">Total: R$ 0,00</p>
+
+    <p id="cartconform">Digite seu endereço para entrega:</p>
+    <input id="inputendereco" type="text" placeholder="Rua, Número, Bairro, Cidade e Cep">
+    <button id="buttfiish">Finalizar Pedido</button>
+    <button id="closeCart">Fechar</button>
+</div>
+
+<main>
+    <section id="Camisetas">
+        <h2></h2>
+        <div class="container-produtos">
+            <div class="produto">
+                <img class="img-produto" src="img/D_NQ_NP_612547-MLB69949677655_062023-O.webp" alt="Camiseta Preta">
+                <p class="nome-produto">Camiseta Preta</p>
+                <p>98.58$</p>
+                <button class="cmq" data-name="Camiseta Preta" data-price="98.58">Adicionar no carrinho</button>
+            </div>
+            <div class="produto">
+                <img class="img-produto" src="img/camiseta-branca-para-sublima_o-poli_ster-100_-tradicional-2_1.jpg" alt="Camiseta Branca">
+                <p class="nome-produto">Camiseta Branca</p>
+                <p>159.58</p>
+                <button class="cmq" data-name="Camiseta Branca" data-price="159.58">Adicionar no carrinho</button>
+            </div>
+            <div class="produto">
+                <img class="img-produto" src="img/camiseta-masculina-soldier-verde-belica-1848981d.webp" alt="Camiseta Verde">
+                <p class="nome-produto">Camiseta Verde</p>
+                <p>159.58</p>
+                <button class="cmq" data-name="Camiseta Verde" data-price="139.58">Adicionar no carrinho</button>
+            </div>
+            <div class="produto">
+                <img class="img-produto" src="img/117-camisetafe.webp" alt="Camiseta Verde">
+                <p class="nome-produto">Camiseta Roxa</p>
+                <p>159.58</p>
+                <button class="cmq" data-name="Camiseta Roxa" data-price="139.58">Adicionar no carrinho</button>
+            </div>
+            <div class="produto">
+                <img class="img-produto" src="img/OIP.jpg" alt="Camiseta Verde">
+                <p class="nome-produto">Camiseta Cinza</p>
+                <p>159.58</p>
+                <button class="cmq" data-name="Camiseta Cinza" data-price="139.58">Adicionar no carrinho</button>
+            </div>
+            <div class="produto">
+                <img class="img-produto" src="img/5e55c19fe8.webp" alt="Camiseta Verde">
+                <p class="nome-produto">Camiseta Azul</p>
+                <p>159.58</p>
+                <button class="cmq" data-name="Camiseta Azul" data-price="139.58">Adicionar no carrinho</button>
+            </div>
+            <div class="produto">
+                <img class="img-produto" src="img/ab822533-e407-5021-826b-2aa19e76c702.jpg" alt="Camiseta Verde">
+                <p class="nome-produto">Camiseta Vinho Claro</p>
+                <p>159.58</p>
+                <button class="cmq" data-name="Camiseta Vinho Claro" data-price="139.58">Adicionar no carrinho</button>
+            </div>
+            <div class="produto">
+                <img class="img-produto" src="img/1588745_camiseta-slim-estampada-351404765_l2_638199198282794092.jpg" alt="Camiseta Verde">
+                <p class="nome-produto">Camiseta Marrom </p>
+                <p>159.58</p>
+                <button class="cmq" data-name="Camiseta Marrom" data-price="139.58">Adicionar no carrinho</button>
+            </div>
+            <div class="produto">
+                <img class="img-produto" src="img/160778-Camiseta-Dixie-Basica-Caramelo7.webp" alt="Camiseta Verde">
+                <p class="nome-produto">Camiseta Caramelo </p>
+                <p>159.58</p>
+                <button class="cmq" data-name="Camiseta Caramelo" data-price="139.58">Adicionar no carrinho</button>
+            </div>
+        </div>
+
+    </section id="Blusas">
+    <div class="container-produtos">
+        <div class="produto">
+            <img class="img-produto" src="img/OIP (2).jpg" alt="Camiseta Preta">
+            <p class="nome-produto">Blusa Preta</p>
+            <p>159.58</p>
+            <button class="cmq" data-name="Blusa Preta" data-price="98.58">Adicionar no carrinho</button>
+        </div>
+        <div class="produto">
+            <img class="img-produto" src="img/2XD-0041-014_zoom1.webp" alt="Camiseta Branca">
+            <p class="nome-produto">Blusa Branca</p>
+            <p>159.58</p>
+            <button class="cmq" data-name="Blusa Branca" data-price="159.58">Adicionar no carrinho</button>
+        </div>
+        <div class="produto">
+            <img class="img-produto" src="img/OIP (3).jpg" alt="Camiseta Verde">
+            <p class="nome-produto">Blusa Verde</p>
+            <p>159.58</p>
+            <button class="cmq" data-name="Blusa Verde" data-price="139.58">Adicionar no carrinho</button>
+        </div>
+        <div class="produto">
+            <img class="img-produto" src="img/326780c1f22f7f7e6a2c5abd7eae269c.webp" alt="Camiseta Verde">
+            <p class="nome-produto">Blusa Cinza</p>
+            <p>159.58</p>
+            <button class="cmq" data-name="Blusa Cinza" data-price="139.58">Adicionar no carrinho</button>
+        </div>
+        <div class="produto">
+            <img class="img-produto" src="img/abaa89d06e6c8efda21c45f3c65fe17d63595b5a_1670651692.jpg" alt="Camiseta Verde">
+            <p class="nome-produto">Blusa Caramelo </p>
+            <p>159.58</p>
+            <button class="cmq" data-name="Blusa Caramelo" data-price="139.58">Adicionar no carrinho</button>
+        </div>
+    </div>
+    <section>
+        <section id="Blusas">
+    </section>
+</main>
+
+<script src="index.js"></script>
+</body>
+</html>
